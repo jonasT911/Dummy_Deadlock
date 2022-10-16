@@ -1,17 +1,17 @@
-package basic;
+
 
 public class MainFile implements Runnable {
 	private static int sum = 0;
 
 	static Object lock1 = new Object();
 	static Object lock2 = new Object();
-	
+	final int repetitions=10000;
 
 	
 	public void foo(Object A, Object B) {
 		synchronized (A) {
 			synchronized (B) {
-				for (int i = 0; i < 10000; i++) {
+				for (int i = 0; i < repetitions; i++) {
 					sum++;
 				
 				}
@@ -22,7 +22,7 @@ public class MainFile implements Runnable {
 	public void bar(Object A, Object B) {
 		synchronized (B) {
 			synchronized (A) {
-				for (int i = 0; i < 10000; i++) {
+				for (int i = 0; i < repetitions; i++) {
 					sum--;
 			
 				}
@@ -44,6 +44,6 @@ public class MainFile implements Runnable {
 			foo(lock1, lock2);
 			bar(lock1, lock2);
 		}
-		System.out.println(getSum(lock1));
+		//System.out.println(getSum(lock1));
 	}
 }

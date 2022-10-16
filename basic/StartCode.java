@@ -1,8 +1,8 @@
-package basic;
+
 
 public class StartCode {
-	public static void main() {
-		int numThreads=5;
+	public static void main(String[] args) {
+		int numThreads=2;
 		Thread list[] = new Thread[numThreads];
 		for (int i = 0; i < numThreads; i++) {
 			Thread t = new Thread(new MainFile());
@@ -19,7 +19,7 @@ public class StartCode {
 			}
 		}
 		
-		System.out.println("Finished");
+		System.out.println("Finished Regular");
 		
 	}
 }
