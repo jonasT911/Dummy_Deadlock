@@ -1,0 +1,16 @@
+2022-10-28 20:59:06 | Trace for trial 2 of test1 written to '/Users/yuhangao/Downloads/cooperari-0.4/./cdata/org.cooperari.examples.RaceDetection/test1.2.trace.log'.
+2022-10-28 20:59:06 | test1: executed 2 trials in 73 ms [failed : java.lang.AssertionError]
+2022-10-28 20:59:06 | Trace for trial 2 of test2 written to '/Users/yuhangao/Downloads/cooperari-0.4/./cdata/org.cooperari.examples.RaceDetection/test2.2.trace.log'.
+2022-10-28 20:59:06 | test2: executed 2 trials in 27 ms [failed : org.cooperari.errors.CMultipleExceptionsError]
+2022-10-28 20:59:06 | Trace for trial 4 of test3 written to '/Users/yuhangao/Downloads/cooperari-0.4/./cdata/org.cooperari.examples.RaceDetection/test3.4.trace.log'.
+2022-10-28 20:59:06 | test3: executed 4 trials in 118 ms [failed : java.lang.AssertionError]
+2022-10-28 20:59:06 | Trace for trial 1 of test4 written to '/Users/yuhangao/Downloads/cooperari-0.4/./cdata/org.cooperari.examples.RaceDetection/test4.1.trace.log'.
+2022-10-28 20:59:06 | test4: executed 1 trials in 29 ms [failed : java.lang.AssertionError]
+2022-10-28 20:59:06 | Trace for trial 2 of test5 written to '/Users/yuhangao/Downloads/cooperari-0.4/./cdata/org.cooperari.examples.RaceDetection/test5.2.trace.log'.
+2022-10-28 20:59:06 | test5: executed 2 trials in 40 ms [failed : java.lang.AssertionError]
+2022-10-28 20:59:06 | Trace for trial 3 of test written to '/Users/yuhangao/Downloads/cooperari-0.4/./cdata/org.cooperari.examples.SemaphoreWithBug/test.3.trace.log'.
+2022-10-28 20:59:06 | test: executed 3 trials in 114 ms [failed : org.cooperari.errors.CWaitDeadlockError]
+2022-10-28 20:59:09 | Trace for trial 40 of test written to '/Users/yuhangao/Downloads/cooperari-0.4/./cdata/org.cooperari.examples.AtomicPrimitives/test.40.trace.log'.
+2022-10-28 20:59:09 | test: executed 40 trials in 2673 ms [failed : java.util.NoSuchElementException]
+2022-10-28 20:59:09 | Trace for trial 2 of test written to '/Users/yuhangao/Downloads/cooperari-0.4/./cdata/org.cooperari.examples.SunMiscUnsafe/test.2.trace.log'.
+2022-10-28 20:59:09 | test: executed 2 trials in 93 ms [failed : java.util.NoSuchElementException]

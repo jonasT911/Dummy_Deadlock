@@ -1,0 +1,22 @@
+# YIELD POINT COVERAGE
+TOTAL	COVERED	%
+17	16	94.11764705882354
+# YIELD POINTS
+COVERED	SOURCE FILE	LINE	SIGNATURE
+Y	SemaphoreWithBug.java	49	field-set(org.cooperari.examples.SemaphoreWithBug.Semaphore.value)
+Y	SemaphoreWithBug.java	57	<monitorenter>
+Y	SemaphoreWithBug.java	58	field-get(org.cooperari.examples.SemaphoreWithBug.Semaphore.value)
+Y	SemaphoreWithBug.java	58	field-set(org.cooperari.examples.SemaphoreWithBug.Semaphore.value)
+Y	SemaphoreWithBug.java	59	Object.notifyAll()
+Y	SemaphoreWithBug.java	60	<monitorexit>
+Y	SemaphoreWithBug.java	67	<monitorenter>
+Y	SemaphoreWithBug.java	68	field-get(org.cooperari.examples.SemaphoreWithBug.Semaphore.value)
+Y	SemaphoreWithBug.java	70	Object.wait()
+Y	SemaphoreWithBug.java	75	<monitorexit>
+Y	SemaphoreWithBug.java	77	field-get(org.cooperari.examples.SemaphoreWithBug.Semaphore.value)
+Y	SemaphoreWithBug.java	77	field-set(org.cooperari.examples.SemaphoreWithBug.Semaphore.value)
+Y	SemaphoreWithBug.java	84	<monitorenter>
+Y	SemaphoreWithBug.java	85	<monitorexit>
+Y	SemaphoreWithBug.java	85	field-get(org.cooperari.examples.SemaphoreWithBug.Semaphore.value)
+N	SemaphoreWithBug.java	86	<monitorexit>
+Y	SemaphoreWithBug.java	97	org.cooperari.CSystem.forkAndJoin(Runnable[])

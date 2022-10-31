@@ -1,0 +1,32 @@
+# YIELD POINT COVERAGE
+TOTAL	COVERED	%
+27	27	100.0
+# YIELD POINTS
+COVERED	SOURCE FILE	LINE	SIGNATURE
+Y	AtomicPrimitives.java	58	field-set(org.cooperari.examples.AtomicPrimitives.Queue.access)
+Y	AtomicPrimitives.java	61	field-set(org.cooperari.examples.AtomicPrimitives.Queue.list)
+Y	AtomicPrimitives.java	69	field-get(org.cooperari.examples.AtomicPrimitives.Queue.access)
+Y	AtomicPrimitives.java	69	java.util.concurrent.atomic.AtomicBoolean.compareAndSet(boolean, boolean)
+Y	AtomicPrimitives.java	70	field-get(org.cooperari.examples.AtomicPrimitives.Queue.list)
+Y	AtomicPrimitives.java	71	field-get(org.cooperari.examples.AtomicPrimitives.Queue.access)
+Y	AtomicPrimitives.java	71	java.util.concurrent.atomic.AtomicBoolean.set(boolean)
+Y	AtomicPrimitives.java	83	field-get(org.cooperari.examples.AtomicPrimitives.Queue.access)
+Y	AtomicPrimitives.java	83	java.util.concurrent.atomic.AtomicBoolean.get()
+Y	AtomicPrimitives.java	84	field-get(org.cooperari.examples.AtomicPrimitives.Queue.access)
+Y	AtomicPrimitives.java	84	java.util.concurrent.atomic.AtomicBoolean.set(boolean)
+Y	AtomicPrimitives.java	86	field-get(org.cooperari.examples.AtomicPrimitives.Queue.list)
+Y	AtomicPrimitives.java	87	field-get(org.cooperari.examples.AtomicPrimitives.Queue.list)
+Y	AtomicPrimitives.java	90	field-get(org.cooperari.examples.AtomicPrimitives.Queue.access)
+Y	AtomicPrimitives.java	90	java.util.concurrent.atomic.AtomicBoolean.set(boolean)
+Y	AtomicPrimitives.java	101	field-get(org.cooperari.examples.AtomicPrimitives.Queue.access)
+Y	AtomicPrimitives.java	101	java.util.concurrent.atomic.AtomicBoolean.compareAndSet(boolean, boolean)
+Y	AtomicPrimitives.java	102	field-get(org.cooperari.examples.AtomicPrimitives.Queue.list)
+Y	AtomicPrimitives.java	103	field-get(org.cooperari.examples.AtomicPrimitives.Queue.access)
+Y	AtomicPrimitives.java	103	java.util.concurrent.atomic.AtomicBoolean.set(boolean)
+Y	AtomicPrimitives.java	117	field-set(org.cooperari.examples.AtomicPrimitives.theQueue)
+Y	AtomicPrimitives.java	129	org.cooperari.CSystem.forkAndJoin(Runnable[])
+Y	AtomicPrimitives.java	130	field-get(org.cooperari.examples.AtomicPrimitives.theQueue)
+Y	AtomicPrimitives.java	131	field-get(org.cooperari.examples.AtomicPrimitives.theQueue)
+Y	AtomicPrimitives.java	132	field-get(org.cooperari.examples.AtomicPrimitives.theQueue)
+Y	AtomicPrimitives.java	133	field-get(org.cooperari.examples.AtomicPrimitives.theQueue)
+Y	AtomicPrimitives.java	135	field-get(org.cooperari.examples.AtomicPrimitives.theQueue)

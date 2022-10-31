@@ -1,0 +1,68 @@
+# THREADS
+TID	NAME	CLASS
+0	test5	org.cooperari.junit.CJUnitRunner$MethodRunner
+1	<1>	org.cooperari.examples.RaceDetection$$Lambda$13/448646770
+2	<2>	org.cooperari.examples.RaceDetection$$Lambda$14/343548757
+3	<3>	org.cooperari.examples.RaceDetection$$Lambda$15/272999682
+4	<4>	org.cooperari.examples.RaceDetection$$Lambda$16/1430727022
+# EXECUTION TRACE
+#	TID	STEP	EVENT	SOURCE FILE	LINE	YIELD POINT	STAGE
+0	0	0	-	<system>	0	<started>	0
+1	0	1	-	RaceDetection.java	45	field-set(org.cooperari.examples.RaceDetection.SharedData.value)	0
+2	0	2	-	RaceDetection.java	57	field-set(org.cooperari.examples.RaceDetection.data)	0
+3	0	3	-	RaceDetection.java	126	org.cooperari.CSystem.forkAndJoin(Runnable[])	0
+4	0	4	-	RaceDetection.java	126	org.cooperari.CSystem.forkAndJoin(Runnable[])	1
+5	1	0	-	<system>	0	<started>	0
+6	2	0	-	<system>	0	<started>	0
+7	3	0	-	<system>	0	<started>	0
+8	4	0	-	<system>	0	<started>	0
+9	3	1	-	RaceDetection.java	136	field-get(org.cooperari.examples.RaceDetection.data)	0
+10	3	2	-	RaceDetection.java	136	<monitorenter>	0
+11	3	3	-	RaceDetection.java	136	field-get(org.cooperari.examples.RaceDetection.data)	0
+12	2	1	-	RaceDetection.java	135	field-get(org.cooperari.examples.RaceDetection.data)	0
+13	1	1	-	RaceDetection.java	130	field-get(org.cooperari.examples.RaceDetection.data)	0
+14	4	1	-	RaceDetection.java	137	field-get(org.cooperari.examples.RaceDetection.data)	0
+15	1	2	-	RaceDetection.java	130	<monitorenter>	0
+16	4	2	-	RaceDetection.java	137	<monitorenter>	0
+17	3	4	-	RaceDetection.java	136	field-get(org.cooperari.examples.RaceDetection.SharedData.value)	0
+18	3	5	-	RaceDetection.java	136	field-set(org.cooperari.examples.RaceDetection.SharedData.value)	0
+19	2	2	-	RaceDetection.java	135	<monitorenter>	0
+20	3	6	-	RaceDetection.java	136	<monitorexit>	0
+21	3	7	-	<system>	0	<terminated>	0
+22	1	3	-	RaceDetection.java	131	field-get(org.cooperari.examples.RaceDetection.data)	0
+23	1	4	-	RaceDetection.java	131	field-get(org.cooperari.examples.RaceDetection.SharedData.value)	0
+24	1	5	-	RaceDetection.java	132	<monitorexit>	0
+25	1	6	-	RaceDetection.java	133	field-get(org.cooperari.examples.RaceDetection.data)	0
+26	2	3	-	RaceDetection.java	135	field-get(org.cooperari.examples.RaceDetection.data)	0
+27	2	4	-	RaceDetection.java	135	field-get(org.cooperari.examples.RaceDetection.SharedData.value)	0
+28	1	7	-	RaceDetection.java	133	field-set(org.cooperari.examples.RaceDetection.SharedData.value)	0
+29	2	5	-	RaceDetection.java	135	field-set(org.cooperari.examples.RaceDetection.SharedData.value)	0
+30	2	6	-	RaceDetection.java	135	<monitorexit>	0
+31	2	7	-	<system>	0	<terminated>	0
+32	4	3	-	RaceDetection.java	137	field-get(org.cooperari.examples.RaceDetection.data)	0
+33	1	8	-	<system>	0	<terminated>	0
+34	4	4	-	RaceDetection.java	137	field-get(org.cooperari.examples.RaceDetection.SharedData.value)	0
+35	4	5	-	RaceDetection.java	137	field-set(org.cooperari.examples.RaceDetection.SharedData.value)	0
+36	4	6	-	RaceDetection.java	137	<monitorexit>	0
+37	4	7	-	<system>	0	<terminated>	0
+38	0	5	-	RaceDetection.java	139	field-get(org.cooperari.examples.RaceDetection.data)	0
+39	0	6	-	RaceDetection.java	139	field-get(org.cooperari.examples.RaceDetection.SharedData.value)	0
+40	0	7	-	<system>	0	<terminated>	0
+# STACK TRACE FOR FAILURE
+java.lang.AssertionError: expected:<4> but was:<3>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at org.cooperari.examples.RaceDetection.test5(RaceDetection.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.cooperari.junit.CJUnitRunner$MethodRunner.run(CJUnitRunner.java:226)
+	at org.cooperari.core.CThread.run(CThread.java:188)

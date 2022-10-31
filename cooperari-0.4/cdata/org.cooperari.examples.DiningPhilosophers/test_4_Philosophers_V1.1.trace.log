@@ -1,0 +1,71 @@
+# THREADS
+TID	NAME	CLASS
+0	test_4_Philosophers_V1	org.cooperari.junit.CJUnitRunner$MethodRunner
+1	Philosopher-0	org.cooperari.examples.DiningPhilosophers$Philosopher
+2	Philosopher-1	org.cooperari.examples.DiningPhilosophers$Philosopher
+3	Philosopher-2	org.cooperari.examples.DiningPhilosophers$Philosopher
+4	Philosopher-3	org.cooperari.examples.DiningPhilosophers$Philosopher
+# EXECUTION TRACE
+#	TID	STEP	EVENT	SOURCE FILE	LINE	YIELD POINT	STAGE
+0	0	0	-	<system>	0	<started>	0
+1	0	1	-	DiningPhilosophers.java	73	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+2	0	2	-	DiningPhilosophers.java	74	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+3	0	3	-	DiningPhilosophers.java	75	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+4	0	4	-	DiningPhilosophers.java	73	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+5	0	5	-	DiningPhilosophers.java	74	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+6	0	6	-	DiningPhilosophers.java	75	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+7	0	7	-	DiningPhilosophers.java	73	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+8	0	8	-	DiningPhilosophers.java	74	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+9	0	9	-	DiningPhilosophers.java	75	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+10	0	10	-	DiningPhilosophers.java	73	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+11	0	11	-	DiningPhilosophers.java	74	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+12	0	12	-	DiningPhilosophers.java	75	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+13	0	13	-	DiningPhilosophers.java	125	org.cooperari.examples.DiningPhilosophers.Philosopher.start()	0
+14	0	14	-	DiningPhilosophers.java	125	org.cooperari.examples.DiningPhilosophers.Philosopher.start()	0
+15	1	0	-	<system>	0	<started>	0
+16	1	1	-	DiningPhilosophers.java	80	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+17	1	2	-	DiningPhilosophers.java	80	<monitorenter>	0
+18	0	15	-	DiningPhilosophers.java	125	org.cooperari.examples.DiningPhilosophers.Philosopher.start()	0
+19	2	0	-	<system>	0	<started>	0
+20	2	1	-	DiningPhilosophers.java	80	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+21	0	16	-	DiningPhilosophers.java	125	org.cooperari.examples.DiningPhilosophers.Philosopher.start()	0
+22	3	0	-	<system>	0	<started>	0
+23	3	1	-	DiningPhilosophers.java	80	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+24	3	2	-	DiningPhilosophers.java	80	<monitorenter>	0
+25	2	2	-	DiningPhilosophers.java	80	<monitorenter>	0
+26	1	3	-	DiningPhilosophers.java	81	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+27	1	4	-	DiningPhilosophers.java	81	<monitorenter>	0
+28	1	5	-	DiningPhilosophers.java	82	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+29	1	6	-	DiningPhilosophers.java	83	<monitorexit>	0
+30	3	3	-	DiningPhilosophers.java	81	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+31	0	17	-	DiningPhilosophers.java	129	org.cooperari.examples.DiningPhilosophers.Philosopher.join()	0
+32	4	0	-	<system>	0	<started>	0
+33	3	4	-	DiningPhilosophers.java	81	<monitorenter>	0
+34	1	7	-	DiningPhilosophers.java	84	<monitorexit>	0
+35	4	1	-	DiningPhilosophers.java	80	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+36	3	5	-	DiningPhilosophers.java	82	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+37	3	6	-	DiningPhilosophers.java	83	<monitorexit>	0
+38	1	8	-	<system>	0	<terminated>	0
+39	2	3	-	DiningPhilosophers.java	81	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+40	0	18	-	DiningPhilosophers.java	129	org.cooperari.examples.DiningPhilosophers.Philosopher.join()	0
+41	4	2	-	DiningPhilosophers.java	80	<monitorenter>	0
+42	2	4	-	DiningPhilosophers.java	81	<monitorenter>	0
+43	3	7	-	DiningPhilosophers.java	84	<monitorexit>	0
+44	4	3	-	DiningPhilosophers.java	81	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+45	4	4	-	DiningPhilosophers.java	81	<monitorenter>	0
+46	4	5	-	DiningPhilosophers.java	82	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+47	4	6	-	DiningPhilosophers.java	83	<monitorexit>	0
+48	3	8	-	<system>	0	<terminated>	0
+49	2	5	-	DiningPhilosophers.java	82	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+50	4	7	-	DiningPhilosophers.java	84	<monitorexit>	0
+51	2	6	-	DiningPhilosophers.java	83	<monitorexit>	0
+52	4	8	-	<system>	0	<terminated>	0
+53	2	7	-	DiningPhilosophers.java	84	<monitorexit>	0
+54	2	8	-	<system>	0	<terminated>	0
+55	0	19	-	DiningPhilosophers.java	129	org.cooperari.examples.DiningPhilosophers.Philosopher.join()	0
+56	0	20	-	DiningPhilosophers.java	129	org.cooperari.examples.DiningPhilosophers.Philosopher.join()	0
+57	0	21	-	DiningPhilosophers.java	133	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+58	0	22	-	DiningPhilosophers.java	133	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+59	0	23	-	DiningPhilosophers.java	133	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+60	0	24	-	DiningPhilosophers.java	133	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+61	0	25	-	<system>	0	<terminated>	0

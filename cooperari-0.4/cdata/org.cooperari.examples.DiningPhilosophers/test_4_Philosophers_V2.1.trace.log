@@ -1,0 +1,80 @@
+# THREADS
+TID	NAME	CLASS
+0	test_4_Philosophers_V2	org.cooperari.junit.CJUnitRunner$MethodRunner
+1	Philosopher-0	org.cooperari.examples.DiningPhilosophers$Philosopher
+2	Philosopher-1	org.cooperari.examples.DiningPhilosophers$Philosopher
+3	Philosopher-2	org.cooperari.examples.DiningPhilosophers$Philosopher
+4	Philosopher-3	org.cooperari.examples.DiningPhilosophers$Philosopher
+# EXECUTION TRACE
+#	TID	STEP	EVENT	SOURCE FILE	LINE	YIELD POINT	STAGE
+0	0	0	-	<system>	0	<started>	0
+1	0	1	-	DiningPhilosophers.java	73	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+2	0	2	-	DiningPhilosophers.java	74	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+3	0	3	-	DiningPhilosophers.java	75	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+4	0	4	-	DiningPhilosophers.java	73	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+5	0	5	-	DiningPhilosophers.java	74	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+6	0	6	-	DiningPhilosophers.java	75	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+7	0	7	-	DiningPhilosophers.java	73	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+8	0	8	-	DiningPhilosophers.java	74	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+9	0	9	-	DiningPhilosophers.java	75	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+10	0	10	-	DiningPhilosophers.java	73	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+11	0	11	-	DiningPhilosophers.java	74	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+12	0	12	-	DiningPhilosophers.java	75	field-set(org.cooperari.examples.DiningPhilosophers.Philosopher.hasEaten)	0
+13	0	13	-	DiningPhilosophers.java	148	org.cooperari.CSystem.forkAndJoin(Runnable[])	0
+14	0	14	-	DiningPhilosophers.java	148	org.cooperari.CSystem.forkAndJoin(Runnable[])	1
+15	1	0	-	<system>	0	<started>	0
+16	2	0	-	<system>	0	<started>	0
+17	3	0	-	<system>	0	<started>	0
+18	4	0	-	<system>	0	<started>	0
+19	1	1	-	DiningPhilosophers.java	80	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+20	4	1	-	DiningPhilosophers.java	80	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+21	1	2	-	DiningPhilosophers.java	80	<monitorenter>	0
+22	4	2	-	DiningPhilosophers.java	80	<monitorenter>	0
+23	1	3	-	DiningPhilosophers.java	81	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+24	3	1	-	DiningPhilosophers.java	80	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+25	4	3	-	DiningPhilosophers.java	81	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+26	3	2	-	DiningPhilosophers.java	80	<monitorenter>	0
+27	2	1	-	DiningPhilosophers.java	80	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.leftFork)	0
+28	2	2	-	DiningPhilosophers.java	80	<monitorenter>	0
+29	2	3	-	DiningPhilosophers.java	81	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+30	3	3	-	DiningPhilosophers.java	81	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+31	3	4	-	DiningPhilosophers.java	81	<monitorenter>	0
+32	2	4	-	DiningPhilosophers.java	81	<monitorenter>	0
+33	4	4	-	DiningPhilosophers.java	81	<monitorenter>	0
+34	2	4	D	DiningPhilosophers.java	81	<monitorenter>	0
+35	3	4	D	DiningPhilosophers.java	81	<monitorenter>	0
+36	4	4	D	DiningPhilosophers.java	81	<monitorenter>	0
+37	1	4	D	DiningPhilosophers.java	81	field-get(org.cooperari.examples.DiningPhilosophers.Philosopher.rightFork)	0
+38	2	4	D	DiningPhilosophers.java	81	<monitorenter>	-1
+39	1	4	-	DiningPhilosophers.java	84	<monitorexit>	0
+40	3	5	-	DiningPhilosophers.java	84	<monitorexit>	0
+41	4	5	-	DiningPhilosophers.java	84	<monitorexit>	0
+42	2	5	-	DiningPhilosophers.java	84	<monitorexit>	0
+43	2	6	-	<system>	0	<terminated>	0
+44	1	5	-	<system>	0	<terminated>	0
+45	4	6	-	<system>	0	<terminated>	0
+46	3	6	-	<system>	0	<terminated>	0
+47	0	15	-	<system>	0	<terminated>	0
+# STACK TRACE FOR FAILURE
+org.cooperari.errors.CMultipleExceptionsError: 4 exceptions:
+ org.cooperari.feature.monitor.CResourceDeadlockError: L3/Philosopher-0/DiningPhilosophers.java:81 > L2/Philosopher-2/DiningPhilosophers.java:81 > L1/Philosopher-3/DiningPhilosophers.java:81 > L0/Philosopher-0/DiningPhilosophers.java:81 > L3/Philosopher-1/DiningPhilosophers.java:81
+ org.cooperari.feature.monitor.CResourceDeadlockError: L3/Philosopher-0/DiningPhilosophers.java:81 > L2/Philosopher-2/DiningPhilosophers.java:81 > L1/Philosopher-3/DiningPhilosophers.java:81 > L0/Philosopher-0/DiningPhilosophers.java:81 > L3/Philosopher-1/DiningPhilosophers.java:81
+ org.cooperari.feature.monitor.CResourceDeadlockError: L3/Philosopher-0/DiningPhilosophers.java:81 > L2/Philosopher-2/DiningPhilosophers.java:81 > L1/Philosopher-3/DiningPhilosophers.java:81 > L0/Philosopher-0/DiningPhilosophers.java:81 > L3/Philosopher-1/DiningPhilosophers.java:81
+ org.cooperari.feature.monitor.CResourceDeadlockError: L3/Philosopher-0/DiningPhilosophers.java:81 > L2/Philosopher-2/DiningPhilosophers.java:81 > L1/Philosopher-3/DiningPhilosophers.java:81 > L0/Philosopher-0/DiningPhilosophers.java:81 > L3/Philosopher-1/DiningPhilosophers.java:81
+
+	at org.cooperari.core.CUncaughtExceptionHandler.rethrowExceptionsIfAny(CUncaughtExceptionHandler.java:118)
+	at org.cooperari.feature.threadrunner.ThreadRunnerOperation.execute(ThreadRunnerOperation.java:117)
+	at org.cooperari.core.CThread.cYield(CThread.java:409)
+	at org.cooperari.feature.threadrunner.ThreadRunnerOperation.execute(ThreadRunnerOperation.java:61)
+	at org.cooperari.feature.threadrunner.YieldPoints.aroundCall(YieldPoints.java:43)
+	at org.cooperari.examples.DiningPhilosophers.test_4_Philosophers_V2(DiningPhilosophers.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.cooperari.junit.CJUnitRunner$MethodRunner.run(CJUnitRunner.java:226)
+	at org.cooperari.core.CThread.run(CThread.java:188)
