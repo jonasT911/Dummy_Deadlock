@@ -37,208 +37,208 @@ import org.junit.runners.MethodSorters;
  *
  * @since 0.2
  */
-//@RunWith(CJUnitRunner.class)
-//@FixMethodOrder(MethodSorters.NAME_ASCENDING)
-///**
-// * Dining philosophers example.
-// *
-// * @since 0.2
-// */
-//public class DiningPhilosophers {
-//
-//  /**
-//   *  The fork class (could be just Object instead).
-//   */
-//  static class Fork { }
-//
-//  /**
-//   * Philosopher thread.
-//   */
-//  static class Philosopher extends Thread {
-//    /** Left fork. */
-//    final Fork leftFork;
-//    /** Right fork. */
-//    final Fork rightFork;
-//    /** Flag indicating if philosopher has eaten. */
-//    boolean hasEaten;
-//
-//    /**
-//     * Constructor.
-//     * @param id Id for philosopher.
-//     * @param left Left fork.
-//     * @param right Right fork.
-//     */
-//    public Philosopher(int id, Fork left, Fork right) {
-//      super("Philosopher-" + id);
-//      leftFork = left;
-//      rightFork = right;
-//      hasEaten = false;
-//    }
-//
-//    @Override
-//    public void run() {
-//      synchronized(leftFork) {
-//        synchronized(rightFork) {
-//          hasEaten = true;
-//        }
-//      }
-//    }
-//
-//    /**
-//     * Create a number of philosophers in the classic table
-//     * fashion.
-//     * @param n Number of philosophers.
-//     * @return An array of inactive philosopher threads (must be started).
-//     */
-//    static Philosopher[] create(int n) {
-//      Fork[] forks = new Fork[n];
-//      for (int i = 0; i < n; i++) {
-//        forks[i] = new Fork();
-//      }
-//
-//      Philosopher[] philosophers = new Philosopher[n];
-//      for (int i = 0; i < n; i++) {
-//        Fork left = forks[i];
-//        Fork right = forks[(i+1) % n];
-//        philosophers[i] = new Philosopher(i, left, right);
-//      }
-//
-//      return philosophers;
-//    }
-//  }
-//
-//  /**
-//   * Test with 4 philosophers, with explicit fork and joining
-//   * of all philosopher threads.
-//   *
-//   * The <code>@CTraceOptions(logEveryTrace=true)</code>
-//   * annotation in this method will cause every execution trace to be logged,
-//   * rather than just (by default) the trace for the first test failure.
-//   *
-//   * @throws InterruptedException (will never happen)
-//   */
-//  @Test @CTraceOptions(logEveryTrace=true)
-//  public void test_4_Philosophers_V1() throws InterruptedException {
-//    // Start philosophers
-//    Philosopher[] thePhilosophers = Philosopher.create(4);
-//    for (Philosopher p : thePhilosophers) {
-//      p.start();
-//    }
-//    // Wait for them to terminate -- maybe they will, maybe they won't :)
-//    for (Philosopher p : thePhilosophers) {
-//      p.join();
-//    }
-//    // Assert that all of them have eaten.
-//    for (Philosopher p : thePhilosophers) {
-//      assertTrue(p.hasEaten);
-//    }
-//  }
-//
-//  /**
-//   * Test with 4 philosophers, using Cooperari's fork-and-join
-//   * API call.
-//   *
-//   * This is equivalent to {@link #test_4_Philosophers_V1()}, but
-//   * much more concise.
-//   */
-//  @Test
-//  public void test_4_Philosophers_V2() {
-//    Philosopher[] thePhilosophers = Philosopher.create(4);
-//
-//    CSystem.forkAndJoin(thePhilosophers);
-//
-//    for (Philosopher p : thePhilosophers) {
-//      assertTrue(p.hasEaten);
-//    }
-//  }
-//
-//  /**
-//   * Test with 8 philosophers, using Cooperari's fork-and-join
-//   * API call.
-//   *
-//   * The number of default maximum test trials, 20, is insufficient to expose
-//   * the deadlock, hence we increase it to 100 using the
-//   * <code>@CMaxTrials(100)</code> annotation for the test method.
-//   *
-//   */
-//  @Test @CMaxTrials(100)
-//  public void test_8_Philosophers() {
-//    Philosopher[] thePhilosophers = Philosopher.create(8);
-//
-//    CSystem.forkAndJoin(thePhilosophers);
-//
-//    for (Philosopher p : thePhilosophers) {
-//      assertTrue(p.hasEaten);
-//    }
-//  }
-//
-//}
-public class DiningPhilosophers implements Runnable {
-  private static int sum = 0;
+@RunWith(CJUnitRunner.class)
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+/**
+* Dining philosophers example.
+*
+* @since 0.2
+*/
+public class DiningPhilosophers {
 
-  static Object lock1 = new Object();
-  static Object lock2 = new Object();
-  final int repetitions=10000;
+ /**
+  *  The fork class (could be just Object instead).
+  */
+ static class Fork { }
 
+ /**
+  * Philosopher thread.
+  */
+ static class Philosopher extends Thread {
+   /** Left fork. */
+   final Fork leftFork;
+   /** Right fork. */
+   final Fork rightFork;
+   /** Flag indicating if philosopher has eaten. */
+   boolean hasEaten;
 
-  public void foo(Object A, Object B) {
-    synchronized (A) {
-      synchronized (B) {
-        for (int i = 0; i < repetitions; i++) {
-          sum++;
+   /**
+    * Constructor.
+    * @param id Id for philosopher.
+    * @param left Left fork.
+    * @param right Right fork.
+    */
+   public Philosopher(int id, Fork left, Fork right) {
+     super("Philosopher-" + id);
+     leftFork = left;
+     rightFork = right;
+     hasEaten = false;
+   }
 
-        }
-      }
-    }
-  }
+   @Override
+   public void run() {
+     synchronized(leftFork) {
+       synchronized(rightFork) {
+         hasEaten = true;
+       }
+     }
+   }
 
-  public void bar(Object A, Object B) {
-    synchronized (B) {
-      synchronized (A) {
-        for (int i = 0; i < repetitions; i++) {
-          sum--;
+   /**
+    * Create a number of philosophers in the classic table
+    * fashion.
+    * @param n Number of philosophers.
+    * @return An array of inactive philosopher threads (must be started).
+    */
+   static Philosopher[] create(int n) {
+     Fork[] forks = new Fork[n];
+     for (int i = 0; i < n; i++) {
+       forks[i] = new Fork();
+     }
 
-        }
-      }
-    }
-  }
+     Philosopher[] philosophers = new Philosopher[n];
+     for (int i = 0; i < n; i++) {
+       Fork left = forks[i];
+       Fork right = forks[(i+1) % n];
+       philosophers[i] = new Philosopher(i, left, right);
+     }
 
-  public int getSum(Object A) {
-    synchronized (A) {
-      return sum;
-    }
-  }
+     return philosophers;
+   }
+ }
 
-  @Override
-  public void run() {
-    // TODO Auto-generated method stub
+ /**
+  * Test with 4 philosophers, with explicit fork and joining
+  * of all philosopher threads.
+  *
+  * The <code>@CTraceOptions(logEveryTrace=true)</code>
+  * annotation in this method will cause every execution trace to be logged,
+  * rather than just (by default) the trace for the first test failure.
+  *
+  * @throws InterruptedException (will never happen)
+  */
+ @Test @CTraceOptions(logEveryTrace=true)
+ public void test_4_Philosophers_V1() throws InterruptedException {
+   // Start philosophers
+   Philosopher[] thePhilosophers = Philosopher.create(4);
+   for (Philosopher p : thePhilosophers) {
+     p.start();
+   }
+   // Wait for them to terminate -- maybe they will, maybe they won't :)
+   for (Philosopher p : thePhilosophers) {
+     p.join();
+   }
+   // Assert that all of them have eaten.
+   for (Philosopher p : thePhilosophers) {
+     assertTrue(p.hasEaten);
+   }
+ }
 
-    for (int x = 0; x < 2; x++) {
-      foo(lock1, lock2);
-      bar(lock1, lock2);
-    }
-    //System.out.println(getSum(lock1));
-  }
-  static final int numThreads=5;
-  @Test
-  public void test1() {
-    Thread list[] = new Thread[numThreads];
-    for (int i = 0; i < numThreads; i++) {
-      Thread t = new Thread(new DiningPhilosophers());
-      list[i] = t;
-      t.start();
-    }
+ /**
+  * Test with 4 philosophers, using Cooperari's fork-and-join
+  * API call.
+  *
+  * This is equivalent to {@link #test_4_Philosophers_V1()}, but
+  * much more concise.
+  */
+ @Test
+ public void test_4_Philosophers_V2() {
+   Philosopher[] thePhilosophers = Philosopher.create(4);
 
-    for (Thread thread : list) {
-      try {
-        thread.join();
-      } catch (InterruptedException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-      }
-    }
+   CSystem.forkAndJoin(thePhilosophers);
 
-    System.out.println("Finished");
+   for (Philosopher p : thePhilosophers) {
+     assertTrue(p.hasEaten);
+   }
+ }
 
-  }
+ /**
+  * Test with 8 philosophers, using Cooperari's fork-and-join
+  * API call.
+  *
+  * The number of default maximum test trials, 20, is insufficient to expose
+  * the deadlock, hence we increase it to 100 using the
+  * <code>@CMaxTrials(100)</code> annotation for the test method.
+  *
+  */
+ @Test @CMaxTrials(100)
+ public void test_8_Philosophers() {
+   Philosopher[] thePhilosophers = Philosopher.create(8);
+
+   CSystem.forkAndJoin(thePhilosophers);
+
+   for (Philosopher p : thePhilosophers) {
+     assertTrue(p.hasEaten);
+   }
+ }
+
 }
+// public class DiningPhilosophers implements Runnable {
+//   private static int sum = 0;
+
+//   static Object lock1 = new Object();
+//   static Object lock2 = new Object();
+//   final int repetitions=10000;
+
+
+//   public void foo(Object A, Object B) {
+//     synchronized (A) {
+//       synchronized (B) {
+//         for (int i = 0; i < repetitions; i++) {
+//           sum++;
+
+//         }
+//       }
+//     }
+//   }
+
+//   public void bar(Object A, Object B) {
+//     synchronized (B) {
+//       synchronized (A) {
+//         for (int i = 0; i < repetitions; i++) {
+//           sum--;
+
+//         }
+//       }
+//     }
+//   }
+
+//   public int getSum(Object A) {
+//     synchronized (A) {
+//       return sum;
+//     }
+//   }
+
+//   @Override
+//   public void run() {
+//     // TODO Auto-generated method stub
+
+//     for (int x = 0; x < 2; x++) {
+//       foo(lock1, lock2);
+//       bar(lock1, lock2);
+//     }
+//     //System.out.println(getSum(lock1));
+//   }
+//   static final int numThreads=5;
+//   @Test
+//   public void test1() {
+//     Thread list[] = new Thread[numThreads];
+//     for (int i = 0; i < numThreads; i++) {
+//       Thread t = new Thread(new DiningPhilosophers());
+//       list[i] = t;
+//       t.start();
+//     }
+
+//     for (Thread thread : list) {
+//       try {
+//         thread.join();
+//       } catch (InterruptedException e) {
+//         // TODO Auto-generated catch block
+//         e.printStackTrace();
+//       }
+//     }
+
+//     System.out.println("Finished");
+
+//   }
+// }
