@@ -1,5 +1,8 @@
-# For Software Testing Project
+# For Software Testing Project:
 ## Run RunTest.cmd on command line to build and run tool on the relevant projects.
+
+All classes being tested need to be in the jpf-core/build/ClassesUnderTest
+To run the test, copy duplicate a JPF file in jpf-core/src/MyTests/basic and set target to the name of the class under test.
 
 # Java Pathfinder (JPF)
 ![build master](https://github.com/javapathfinder/jpf-core/actions/workflows/simple_build.yml/badge.svg)

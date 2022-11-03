@@ -1,5 +1,12 @@
-echo first
+echo Initial Build
 call gradlew.bat
-echo Next
-java -jar build/RunJPF.jar src/examples/Racer.jpf
-echo finished
+
+
+for %%f in (src/MyTests/basic/*.jpf) do (
+	echo  _________________________
+	echo  _________________________
+    echo %%~nf
+	java -jar build/RunJPF.jar src/MyTests/basic/%%~nf.jpf
+)
+
+echo Finished
