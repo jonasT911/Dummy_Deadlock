@@ -1,3 +1,6 @@
+# For Software Testing Project
+## Run RunTest.cmd on command line to build and run tool on the relevant projects.
+
 # Java Pathfinder (JPF)
 ![build master](https://github.com/javapathfinder/jpf-core/actions/workflows/simple_build.yml/badge.svg)
 
