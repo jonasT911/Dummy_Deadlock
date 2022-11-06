@@ -1,10 +1,10 @@
 # THREADS
 TID	NAME	CLASS
 0	test5	org.cooperari.junit.CJUnitRunner$MethodRunner
-1	<1>	org.cooperari.examples.RaceDetection$$Lambda$13/448646770
-2	<2>	org.cooperari.examples.RaceDetection$$Lambda$14/343548757
-3	<3>	org.cooperari.examples.RaceDetection$$Lambda$15/272999682
-4	<4>	org.cooperari.examples.RaceDetection$$Lambda$16/1430727022
+1	<1>	org.cooperari.examples.RaceDetection$$Lambda$13/1790816203
+2	<2>	org.cooperari.examples.RaceDetection$$Lambda$14/1685740780
+3	<3>	org.cooperari.examples.RaceDetection$$Lambda$15/1615185083
+4	<4>	org.cooperari.examples.RaceDetection$$Lambda$16/625432279
 # EXECUTION TRACE
 #	TID	STEP	EVENT	SOURCE FILE	LINE	YIELD POINT	STAGE
 0	0	0	-	<system>	0	<started>	0

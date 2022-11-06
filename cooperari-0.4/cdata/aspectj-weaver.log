@@ -1,304 +1,451 @@
-2022-10-30 23:06:35 | debug weaving 'org.cooperari.examples.DiningPhilosophers'
-2022-10-30 23:06:35 | weaveinfo Join point 'method-call(void org.cooperari.examples.DiningPhilosophers$Philosopher.start())' in Type 'org.cooperari.examples.DiningPhilosophers' (DiningPhilosophers.java:125) advised by around advice from 'org.cooperari.feature.thread.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'method-call(void org.cooperari.examples.DiningPhilosophers$Philosopher.join())' in Type 'org.cooperari.examples.DiningPhilosophers' (DiningPhilosophers.java:129) advised by around advice from 'org.cooperari.feature.thread.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-get(boolean org.cooperari.examples.DiningPhilosophers$Philosopher.hasEaten)' in Type 'org.cooperari.examples.DiningPhilosophers' (DiningPhilosophers.java:133) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-get(boolean org.cooperari.examples.DiningPhilosophers$Philosopher.hasEaten)' in Type 'org.cooperari.examples.DiningPhilosophers' (DiningPhilosophers.java:133) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'org.cooperari.examples.DiningPhilosophers' (DiningPhilosophers.java:148) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-get(boolean org.cooperari.examples.DiningPhilosophers$Philosopher.hasEaten)' in Type 'org.cooperari.examples.DiningPhilosophers' (DiningPhilosophers.java:151) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-get(boolean org.cooperari.examples.DiningPhilosophers$Philosopher.hasEaten)' in Type 'org.cooperari.examples.DiningPhilosophers' (DiningPhilosophers.java:151) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'org.cooperari.examples.DiningPhilosophers' (DiningPhilosophers.java:168) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-get(boolean org.cooperari.examples.DiningPhilosophers$Philosopher.hasEaten)' in Type 'org.cooperari.examples.DiningPhilosophers' (DiningPhilosophers.java:171) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-get(boolean org.cooperari.examples.DiningPhilosophers$Philosopher.hasEaten)' in Type 'org.cooperari.examples.DiningPhilosophers' (DiningPhilosophers.java:171) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | debug generating class 'org.cooperari.examples.DiningPhilosophers$AjcClosure1'
-2022-10-30 23:06:35 | debug generating class 'org.cooperari.examples.DiningPhilosophers$AjcClosure3'
-2022-10-30 23:06:35 | debug generating class 'org.cooperari.examples.DiningPhilosophers$AjcClosure5'
-2022-10-30 23:06:35 | debug generating class 'org.cooperari.examples.DiningPhilosophers$AjcClosure7'
-2022-10-30 23:06:35 | debug weaving 'org.cooperari.examples.DiningPhilosophers$Philosopher'
-2022-10-30 23:06:35 | weaveinfo Join point 'field-set(org.cooperari.examples.DiningPhilosophers$Fork org.cooperari.examples.DiningPhilosophers$Philosopher.leftFork)' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:73) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-set(org.cooperari.examples.DiningPhilosophers$Fork org.cooperari.examples.DiningPhilosophers$Philosopher.leftFork)' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:73) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-set(org.cooperari.examples.DiningPhilosophers$Fork org.cooperari.examples.DiningPhilosophers$Philosopher.rightFork)' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:74) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-set(org.cooperari.examples.DiningPhilosophers$Fork org.cooperari.examples.DiningPhilosophers$Philosopher.rightFork)' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:74) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-set(boolean org.cooperari.examples.DiningPhilosophers$Philosopher.hasEaten)' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:75) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-set(boolean org.cooperari.examples.DiningPhilosophers$Philosopher.hasEaten)' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:75) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-get(org.cooperari.examples.DiningPhilosophers$Fork org.cooperari.examples.DiningPhilosophers$Philosopher.leftFork)' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:80) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-get(org.cooperari.examples.DiningPhilosophers$Fork org.cooperari.examples.DiningPhilosophers$Philosopher.leftFork)' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:80) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:80) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-get(org.cooperari.examples.DiningPhilosophers$Fork org.cooperari.examples.DiningPhilosophers$Philosopher.rightFork)' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:81) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-get(org.cooperari.examples.DiningPhilosophers$Fork org.cooperari.examples.DiningPhilosophers$Philosopher.rightFork)' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:81) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:81) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-set(boolean org.cooperari.examples.DiningPhilosophers$Philosopher.hasEaten)' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:82) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'field-set(boolean org.cooperari.examples.DiningPhilosophers$Philosopher.hasEaten)' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:82) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:83) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.DiningPhilosophers$Philosopher' (DiningPhilosophers.java:84) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.Signature'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.Factory'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.JoinPoint$EnclosingStaticPart'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.JoinPoint$StaticPart'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.JoinPoint'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.SignatureImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.UnlockSignatureImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.reflect.UnlockSignature'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.LockSignatureImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.reflect.LockSignature'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.AdviceSignatureImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.reflect.AdviceSignature'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.reflect.CodeSignature'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.reflect.MemberSignature'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.CodeSignatureImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.MemberSignatureImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.InitializerSignatureImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.reflect.InitializerSignature'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.CatchClauseSignatureImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.reflect.CatchClauseSignature'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.FieldSignatureImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.reflect.FieldSignature'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.ConstructorSignatureImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.reflect.ConstructorSignature'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.reflect.MethodSignature'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.MethodSignatureImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.reflect.SourceLocation'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.SignatureImpl$Cache'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.JoinPointImpl$StaticPartImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.SourceLocationImpl'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.CSystem'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.errors.CNonCooperativeModeError'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.JUnitCore'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.Runner'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.Describable'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.JUnit38ClassRunner'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.manipulation.Filterable'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.manipulation.Orderable'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.manipulation.Sortable'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.JUnitSystem'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.TextListener'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.notification.RunNotifier'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.notification.StoppedByUserException'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.notification.SynchronizedRunListener'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.notification.RunListener$ThreadSafe'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.Computer'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.RunnerBuilder'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.Computer$1'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.Computer$2'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.Suite'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.ParentRunner'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.Request'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.requests.FilterRequest'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.ErrorReportingRunner'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.requests.ClassRequest'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.requests.MemoizingRequest'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.requests.SortingRequest'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.requests.OrderingRequest'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.InitializationError'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.builders.AllDefaultPossibilitiesBuilder'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.Request$1'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.builders.SuiteMethodBuilder'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.builders.NullBuilder'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.AssumptionViolatedException'
-2022-10-30 23:06:35 | debug not weaving 'org.hamcrest.SelfDescribing'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.Statement'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.ParentRunner$3'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.ParentRunner$2'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.MemberValueConsumer'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.rules.RunRules'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.statements.RunAfters'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.statements.RunBefores'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.manipulation.NoTestsRemainException'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.RunnerScheduler'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.InvalidTestClassError'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.validator.AnnotationsValidator'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.validator.TestClassValidator'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.validator.AnnotationsValidator$AnnotatableValidator'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.validator.AnnotationsValidator$ClassValidator'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.validator.AnnotationValidatorFactory'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.validator.AnnotationsValidator$MethodValidator'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.validator.AnnotationsValidator$FieldValidator'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.builders.IgnoredBuilder'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.builders.IgnoredClassRunner'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.builders.AnnotatedBuilder'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.SuiteMethod'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.builders.JUnit3Builder'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.builders.JUnit4Builder'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.JUnit4'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.BlockJUnit4ClassRunner'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.Ignore'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.RunWith'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.junit.CJUnitRunner'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy2'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.FixMethodOrder'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.MethodSorters'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.MethodSorter'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.MethodSorter$1'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.MethodSorter$2'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy3'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.BlockJUnit4ClassRunner$1'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.statements.FailOnTimeout'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.statements.ExpectException'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.statements.InvokeMethod'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.statements.Fail'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.CTest'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.validator.PublicClassValidator'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.junit.CJUnitRunner$1'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.ParentRunner$1'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.TestClass'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.Annotatable'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.FrameworkMember'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.FrameworkField'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.FrameworkMethod'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.TestClass$FieldComparator'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.TestClass$MethodComparator'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.Test'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.Test$None'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy4'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.config.CTraceOptions'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy5'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.Before'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.BeforeClass'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.config.CMaxTrials'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy6'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.AfterClass'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$RuleValidator'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$Builder'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.ClassRule'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$DeclaringClassMustBePublic'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeStatic'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBePublic'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeATestRule'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.Rule'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeNonStaticOrAlsoClassRule'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeARule'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeATestRule'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeARule'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.validator.ValidateWith'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.Assert'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.ComparisonFailure'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.After'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.Description'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.OrderWith'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.Result'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.Result$Listener'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.Result$SerializedForm'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy8'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.notification.RunNotifier$1'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.notification.RunNotifier$SafeNotifier'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.model.EachTestNotifier'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.notification.RunNotifier$3'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.ParentRunner$ClassRuleCollector'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.rules.TestRule'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.RuleContainer'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.RuleContainer$1'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.ParentRunner$4'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.junit.CPreemptiveOnly'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.notification.RunNotifier$5'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.junit.CJUnitRunner$MethodRunner'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.errors.CCheckedExceptionError'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CSession'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.errors.CHotspotError'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.CTestResult'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CRuntime'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CConfiguration'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.config.CBaseConfiguration'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.CAllFeatures'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.CFeature'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.atomic.CAtomicObjectsFeature'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.data.CDataAccessFeature'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.monitor.CMonitorFeature'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.hotspots.CHotspotFeature'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.thread.CThreadFeature'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.threadrunner.CThreadRunnerFeature'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.unsafe.CSunMiscUnsafeFeature'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.config.CRaceDetection'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.config.CInstrument'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy9'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.config.CScheduling'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CProgramStateFactory'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CSchedulerFactory'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CProgramStateFactory$1'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CProgramStateFactory$2'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CProgramState'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CSchedulerFactory$1'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CSchedulerFactory$2'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CScheduler'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.Oblitus'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.Memini'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy10'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy11'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.config.CDetectResourceDeadlocks'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy12'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.config.CTimeLimit'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy13'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.config.CGenerateCoverageReports'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy14'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.config.CAlways'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy15'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.config.CNever'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy16'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.config.CSometimes'
-2022-10-30 23:06:35 | debug not weaving 'com.sun.proxy.$Proxy17'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.monitor.MonitorPool'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.monitor.DeadlockDetector'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.monitor.CResourceDeadlockError'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.errors.CDeadlockError'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.util.ResourceGraph'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.hotspots.HotspotHandler'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CTrace'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CEngine'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.errors.CWaitDeadlockError'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CUncaughtExceptionHandler'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.errors.CMultipleExceptionsError'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CThreadMappings'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CThread'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CThreadHandle'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CProgramState$CElement'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.COperation'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CThread$Die'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CThread$1'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CThread$2'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CThread$3'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CThread$4'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CThread$5'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.COperation$1'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CThreadLocation'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CTrace$ThreadInfo'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CTrace$TraceItem'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CThreadState'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CEngine$1'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CGroupProgramState'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CGroupProgramState$1'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.scheduling.CGroupProgramState$Group'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.util.CRawTuple'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runners.model.FrameworkMethod$1'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.internal.runners.model.ReflectiveCallable'
-2022-10-30 23:06:35 | debug weaving 'org.cooperari.examples.DiningPhilosophers$Fork'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CThread$6'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.JoinPointImpl'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.ProceedingJoinPoint'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.data.YieldPoints'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.lang.NoAspectBoundException'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.StringMaker'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.reflect.SignatureImpl$CacheImpl'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.data.Write'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.data.DataOperation'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.data.RaceDetector'
-2022-10-30 23:06:35 | debug cannot weave 'org.aspectj.runtime.internal.Conversions'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.thread.YieldPoints'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.thread.Start'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.thread.ThreadOperation'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.data.Read'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.monitor.YieldPoints'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.monitor.Enter'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.monitor.MonitorOperation'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.monitor.Monitor'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.monitor.Exit'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.thread.Join'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.util.CReport'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CTrace$EventType'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.core.CSession$CTestResultImpl'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.junit.CTestResultPool'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.notification.Failure'
-2022-10-30 23:06:35 | debug not weaving 'org.junit.runner.notification.RunNotifier$6'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.threadrunner.YieldPoints'
-2022-10-30 23:06:35 | debug not weaving 'org.cooperari.feature.threadrunner.ThreadRunnerOperation'
-2022-10-30 23:06:43 | debug not weaving 'org.junit.runner.notification.RunNotifier$4'
-2022-10-30 23:06:43 | debug not weaving 'org.junit.runner.notification.RunNotifier$2'
-2022-10-30 23:06:43 | debug not weaving 'org.cooperari.core.util.IO'
+2022-11-05 18:42:47 | debug weaving 'org.cooperari.examples.RaceDetection'
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:57) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:57) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:70) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:70) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:70) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:70) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:80) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:80) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:80) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:80) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:90) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:96) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:96) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:96) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:96) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:105) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:117) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:117) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:117) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:117) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:126) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:139) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:139) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:139) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:139) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:137) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:137) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:137) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:137) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:137) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:137) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:137) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:137) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:137) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:137) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:136) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:136) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:136) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:136) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:136) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:136) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:136) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:136) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:136) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:136) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:135) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:135) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:135) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:135) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:135) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:135) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:135) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:135) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:135) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:135) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:130) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:130) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:130) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:131) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:131) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:131) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:131) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:132) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:133) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:133) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:133) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:133) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:115) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:115) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:115) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:115) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:115) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:115) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:115) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:115) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:115) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:115) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:114) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:114) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:114) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:114) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:114) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:114) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:114) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:114) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:114) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:114) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:113) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:113) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:113) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:113) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:113) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:113) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:113) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:113) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:113) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:113) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:108) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:108) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:108) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:108) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:109) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:109) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:109) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:110) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:110) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:110) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:110) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:111) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:94) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:94) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:94) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:94) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:94) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:94) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:94) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:94) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:94) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:94) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:93) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:93) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:93) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:93) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:93) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:93) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:93) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:93) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:93) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:93) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:92) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:92) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:92) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:92) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:92) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:92) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:92) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:92) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:92) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:92) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:91) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:91) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:91) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:91) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:91) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:91) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:79) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(org.cooperari.examples.RaceDetection$SharedData org.cooperari.examples.RaceDetection.data)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-get(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection' (RaceDetection.java:69) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | debug generating class 'org.cooperari.examples.RaceDetection$AjcClosure1'
+2022-11-05 18:42:47 | debug generating class 'org.cooperari.examples.RaceDetection$AjcClosure3'
+2022-11-05 18:42:47 | debug generating class 'org.cooperari.examples.RaceDetection$AjcClosure5'
+2022-11-05 18:42:47 | debug generating class 'org.cooperari.examples.RaceDetection$AjcClosure7'
+2022-11-05 18:42:47 | debug generating class 'org.cooperari.examples.RaceDetection$AjcClosure9'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.Signature'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.Factory'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.JoinPoint$EnclosingStaticPart'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.JoinPoint$StaticPart'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.reflect.SourceLocation'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.MethodSignatureImpl'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.reflect.MethodSignature'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.reflect.CodeSignature'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.reflect.MemberSignature'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.CodeSignatureImpl'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.MemberSignatureImpl'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.SignatureImpl'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.ConstructorSignatureImpl'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.reflect.ConstructorSignature'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.UnlockSignatureImpl'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.reflect.UnlockSignature'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.LockSignatureImpl'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.reflect.LockSignature'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.AdviceSignatureImpl'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.reflect.AdviceSignature'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.InitializerSignatureImpl'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.reflect.InitializerSignature'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.CatchClauseSignatureImpl'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.reflect.CatchClauseSignature'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.FieldSignatureImpl'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.reflect.FieldSignature'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.lang.JoinPoint'
+2022-11-05 18:42:47 | debug weaving 'org.cooperari.examples.RaceDetection$SharedData'
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection$SharedData' (RaceDetection.java:45) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | weaveinfo Join point 'field-set(int org.cooperari.examples.RaceDetection$SharedData.value)' in Type 'org.cooperari.examples.RaceDetection$SharedData' (RaceDetection.java:45) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.SignatureImpl$Cache'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.JoinPointImpl$StaticPartImpl'
+2022-11-05 18:42:47 | debug cannot weave 'org.aspectj.runtime.reflect.SourceLocationImpl'
+2022-11-05 18:42:47 | debug not weaving 'org.cooperari.CSystem'
+2022-11-05 18:42:47 | debug not weaving 'org.cooperari.errors.CNonCooperativeModeError'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.JUnitCore'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.Runner'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.Describable'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.internal.runners.JUnit38ClassRunner'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.manipulation.Filterable'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.manipulation.Orderable'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.manipulation.Sortable'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.internal.JUnitSystem'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.internal.TextListener'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.notification.RunNotifier'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.notification.StoppedByUserException'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.notification.SynchronizedRunListener'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.notification.RunListener$ThreadSafe'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.Computer'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runners.model.RunnerBuilder'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.Computer$1'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.Computer$2'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runners.Suite'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runners.ParentRunner'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.Request'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.internal.requests.FilterRequest'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.internal.runners.ErrorReportingRunner'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.internal.requests.ClassRequest'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.internal.requests.MemoizingRequest'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.internal.requests.SortingRequest'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runners.model.InitializationError'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.internal.builders.AllDefaultPossibilitiesBuilder'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runner.Request$1'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.internal.requests.OrderingRequest'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.internal.builders.SuiteMethodBuilder'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.internal.builders.NullBuilder'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runners.model.Statement'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runners.ParentRunner$3'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runners.ParentRunner$2'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.runners.model.MemberValueConsumer'
+2022-11-05 18:42:47 | debug not weaving 'org.junit.rules.RunRules'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.statements.RunAfters'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.statements.RunBefores'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.AssumptionViolatedException'
+2022-11-05 18:42:48 | debug not weaving 'org.hamcrest.SelfDescribing'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.manipulation.NoTestsRemainException'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.model.RunnerScheduler'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.model.InvalidTestClassError'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.validator.AnnotationsValidator'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.validator.TestClassValidator'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.validator.AnnotationsValidator$AnnotatableValidator'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.validator.AnnotationsValidator$ClassValidator'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.validator.AnnotationValidatorFactory'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.validator.AnnotationsValidator$MethodValidator'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.validator.AnnotationsValidator$FieldValidator'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.builders.IgnoredBuilder'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.builders.IgnoredClassRunner'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.builders.AnnotatedBuilder'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.SuiteMethod'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.builders.JUnit3Builder'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.builders.JUnit4Builder'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.JUnit4'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.BlockJUnit4ClassRunner'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.Ignore'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.RunWith'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.junit.CJUnitRunner'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy2'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.FixMethodOrder'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.MethodSorters'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.MethodSorter'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.MethodSorter$1'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.MethodSorter$2'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy3'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.statements.FailOnTimeout'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.statements.ExpectException'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.statements.InvokeMethod'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.statements.Fail'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.BlockJUnit4ClassRunner$1'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.CTest'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.validator.PublicClassValidator'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.junit.CJUnitRunner$1'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.ParentRunner$1'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.model.TestClass'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.model.Annotatable'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.model.FrameworkMember'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.model.FrameworkField'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.model.FrameworkMethod'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.model.TestClass$FieldComparator'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.model.TestClass$MethodComparator'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.Before'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy4'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.Test'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.Test$None'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy5'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.BeforeClass'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.config.CRaceDetection'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy6'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.AfterClass'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$RuleValidator'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$Builder'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.ClassRule'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$DeclaringClassMustBePublic'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeStatic'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBePublic'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeATestRule'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.Rule'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeNonStaticOrAlsoClassRule'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeARule'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeATestRule'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeARule'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.validator.ValidateWith'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.Assert'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.ComparisonFailure'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.After'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.Description'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.OrderWith'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.Result'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.Result$Listener'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.Result$SerializedForm'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy8'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.notification.RunNotifier$1'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.notification.RunNotifier$SafeNotifier'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.model.EachTestNotifier'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.notification.RunNotifier$3'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.ParentRunner$ClassRuleCollector'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.rules.TestRule'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.RuleContainer'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.RuleContainer$1'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.ParentRunner$4'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.junit.CPreemptiveOnly'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.notification.RunNotifier$5'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.junit.CJUnitRunner$MethodRunner'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.errors.CCheckedExceptionError'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CSession'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.errors.CHotspotError'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.CTestResult'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CRuntime'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CConfiguration'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.config.CBaseConfiguration'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.CAllFeatures'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.CFeature'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.atomic.CAtomicObjectsFeature'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.data.CDataAccessFeature'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.monitor.CMonitorFeature'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.hotspots.CHotspotFeature'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.thread.CThreadFeature'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.threadrunner.CThreadRunnerFeature'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.unsafe.CSunMiscUnsafeFeature'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.config.CInstrument'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy9'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.config.CScheduling'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CProgramStateFactory'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CSchedulerFactory'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CProgramStateFactory$1'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CProgramStateFactory$2'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CProgramState'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CSchedulerFactory$1'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CSchedulerFactory$2'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CScheduler'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.Oblitus'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.Memini'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy10'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.config.CMaxTrials'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy11'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.config.CDetectResourceDeadlocks'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy12'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.config.CTimeLimit'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy13'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.config.CGenerateCoverageReports'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy14'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.config.CAlways'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy15'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.config.CNever'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy16'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.config.CSometimes'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy17'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.config.CTraceOptions'
+2022-11-05 18:42:48 | debug not weaving 'com.sun.proxy.$Proxy18'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.monitor.MonitorPool'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.monitor.DeadlockDetector'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.monitor.CResourceDeadlockError'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.errors.CDeadlockError'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.util.ResourceGraph'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.hotspots.HotspotHandler'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CTrace'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CEngine'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.errors.CWaitDeadlockError'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CUncaughtExceptionHandler'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.errors.CMultipleExceptionsError'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CThreadMappings'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CThread'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CThreadHandle'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CProgramState$CElement'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.COperation'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CThread$1'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CThread$2'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CThread$3'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CThread$4'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CThread$5'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CThread$Die'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.COperation$1'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CThreadLocation'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CTrace$ThreadInfo'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CTrace$TraceItem'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CThreadState'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CEngine$1'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CGroupProgramState'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CGroupProgramState$1'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.scheduling.CGroupProgramState$Group'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.util.CRawTuple'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runners.model.FrameworkMethod$1'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.internal.runners.model.ReflectiveCallable'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CThread$6'
+2022-11-05 18:42:48 | debug cannot weave 'org.aspectj.runtime.internal.Conversions'
+2022-11-05 18:42:48 | debug cannot weave 'org.aspectj.runtime.reflect.JoinPointImpl'
+2022-11-05 18:42:48 | debug cannot weave 'org.aspectj.lang.ProceedingJoinPoint'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.data.YieldPoints'
+2022-11-05 18:42:48 | debug cannot weave 'org.aspectj.lang.NoAspectBoundException'
+2022-11-05 18:42:48 | debug cannot weave 'org.aspectj.runtime.reflect.StringMaker'
+2022-11-05 18:42:48 | debug cannot weave 'org.aspectj.runtime.reflect.SignatureImpl$CacheImpl'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.data.Write'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.data.DataOperation'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.data.RaceDetector'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.threadrunner.YieldPoints'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.threadrunner.ThreadRunnerOperation'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.data.Read'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.util.CReport'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CSession$CTestResultImpl'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.junit.CTestResultPool'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.notification.Failure'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.notification.RunNotifier$6'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.errors.CRaceError'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.data.RaceDetector$Data'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.data.RaceDetector$Status'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.CTrace$EventType'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.monitor.YieldPoints'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.monitor.Enter'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.monitor.MonitorOperation'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.monitor.Monitor'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.feature.monitor.Exit'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.notification.RunNotifier$4'
+2022-11-05 18:42:48 | debug not weaving 'org.junit.runner.notification.RunNotifier$2'
+2022-11-05 18:42:48 | debug not weaving 'org.cooperari.core.util.IO'
