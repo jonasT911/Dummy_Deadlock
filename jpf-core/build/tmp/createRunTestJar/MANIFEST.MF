@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Title: Java Pathfinder test launch system
+Implementation-Version: null-SNAPSHOT
+Built-By: jonas
+Specification-Version: null-SNAPSHOT
+Main-Class: gov.nasa.jpf.tool.RunTest
+Implementation-Vendor: NASA Ames Research Center
+

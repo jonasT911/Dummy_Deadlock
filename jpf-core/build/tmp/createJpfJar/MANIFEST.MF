@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Implementation-Title: Java Pathfinder core system
+Implementation-Version: null-SNAPSHOT
+Built-By: jonas
+Specification-Version: null-SNAPSHOT
+Implementation-Vendor: NASA Ames Research Center
+

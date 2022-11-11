@@ -1,0 +1,4 @@
+target = StartCode
+
+# this should produce a deadlock
+target.args = 2,4,1
